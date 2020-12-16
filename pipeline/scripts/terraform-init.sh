@@ -1,3 +1,3 @@
 #!/bin/bash
 
-terraform validate
+terraform init
