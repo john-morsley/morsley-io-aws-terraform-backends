@@ -1,6 +1,7 @@
 stages:
 - validate
 - plan
+- apply
 
 #only:
 #- master
@@ -22,3 +23,9 @@ Plan:
   image: johnmorsley/alpine-with-terraform:0.14.2
   script:
   - sh pipeline/scripts/terraform-plan.sh
+
+  Apply:
+  stage: apply
+  image: johnmorsley/alpine-with-terraform:0.14.2
+  script:
+  - sh pipeline/scripts/terraform-apply.sh
