@@ -1,14 +1,14 @@
 stages:
-- validate-simple-example
+- validate
 
 #only:
 #- master
 
-Validate Simple Example:
-  stage: validate-simple-example
+Validate:
+  stage: validate
   image: johnmorsley/alpine-with-terraform:0.14.2
   script:
   - export AWS_DEFAULT_REGION=$AWS_DEFAULT_REGION
   - export AWS_ACCESS_KEY=$AWS_ACCESS_KEY
   - export AWS_SECRET_ACCESS_KEY=$AWS_SECRET_ACCESS_KEY
-  - sh pipeline/scripts/terraform-validate.sh "examples/simple"
+  - sh pipeline/scripts/terraform-validate.sh
