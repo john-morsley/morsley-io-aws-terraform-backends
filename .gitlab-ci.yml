@@ -24,7 +24,7 @@ Plan:
   script:
   - sh pipeline/scripts/terraform-plan.sh
 
-  Apply:
+Apply:
   stage: apply
   image: johnmorsley/alpine-with-terraform:0.14.2
   script:
