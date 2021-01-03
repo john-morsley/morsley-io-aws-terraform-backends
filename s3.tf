@@ -1,9 +1,14 @@
-#        _____   ____  
-#       / ____| |___ \ 
-#      | (___     __) |
-#       \___ \   |__ < 
-#       ____) |  ___) |
-#      |_____/  |____/ 
+/*
+  _____ ____     
+ / ____|___ \   
+| (___   __) |
+ \___ \ |__ < 
+ ____) |___) | 
+|_____/|____/ 
+                                               
+            */
+
+# https://registry.terraform.io/providers/hashicorp/aws/latest/docs/resources/s3_bucket
 
 resource "aws_s3_bucket" "terraform-backend-states" {
 
